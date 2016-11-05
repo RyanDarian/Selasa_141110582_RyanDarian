@@ -38,10 +38,18 @@
             this.FontFamilyLabel = new System.Windows.Forms.ToolStripLabel();
             this.fontfamily = new System.Windows.Forms.ToolStripComboBox();
             this.ColorBtn = new System.Windows.Forms.ToolStripButton();
+            this.Backgroundbtn = new System.Windows.Forms.ToolStripButton();
             this.rtb1 = new System.Windows.Forms.RichTextBox();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.New = new System.Windows.Forms.ToolStripMenuItem();
+            this.Open = new System.Windows.Forms.ToolStripMenuItem();
+            this.Save = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.toolStrip1.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -54,10 +62,11 @@
             this.UnderlineBtn,
             this.FontFamilyLabel,
             this.fontfamily,
-            this.ColorBtn});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.ColorBtn,
+            this.Backgroundbtn});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(530, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(525, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -126,27 +135,92 @@
             this.ColorBtn.Text = "ColorBtn";
             this.ColorBtn.Click += new System.EventHandler(this.ColorBtn_Click);
             // 
+            // Backgroundbtn
+            // 
+            this.Backgroundbtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Backgroundbtn.Image = ((System.Drawing.Image)(resources.GetObject("Backgroundbtn.Image")));
+            this.Backgroundbtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Backgroundbtn.Name = "Backgroundbtn";
+            this.Backgroundbtn.Size = new System.Drawing.Size(26, 22);
+            this.Backgroundbtn.Text = "BG";
+            this.Backgroundbtn.Click += new System.EventHandler(this.Backgroundbtn_Click);
+            // 
             // rtb1
             // 
             this.rtb1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtb1.Location = new System.Drawing.Point(1, 30);
+            this.rtb1.Location = new System.Drawing.Point(-3, 53);
             this.rtb1.Name = "rtb1";
-            this.rtb1.Size = new System.Drawing.Size(528, 377);
+            this.rtb1.Size = new System.Drawing.Size(528, 431);
             this.rtb1.TabIndex = 1;
             this.rtb1.Text = "";
+            this.rtb1.TextChanged += new System.EventHandler(this.rtb1_TextChanged);
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton1});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(525, 25);
+            this.toolStrip2.TabIndex = 2;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.New,
+            this.Open,
+            this.Save,
+            this.Exit});
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(38, 22);
+            this.toolStripDropDownButton1.Text = "File";
+            // 
+            // New
+            // 
+            this.New.Name = "New";
+            this.New.Size = new System.Drawing.Size(152, 22);
+            this.New.Text = "New";
+            this.New.Click += new System.EventHandler(this.New_Click);
+            // 
+            // Open
+            // 
+            this.Open.Name = "Open";
+            this.Open.Size = new System.Drawing.Size(152, 22);
+            this.Open.Text = "Open";
+            this.Open.Click += new System.EventHandler(this.Open_Click);
+            // 
+            // Save
+            // 
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(152, 22);
+            this.Save.Text = "Save";
+            this.Save.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(152, 22);
+            this.Exit.Text = "Exit";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 407);
-            this.Controls.Add(this.rtb1);
+            this.ClientSize = new System.Drawing.Size(525, 485);
             this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.toolStrip2);
+            this.Controls.Add(this.rtb1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,8 +238,15 @@
         private System.Windows.Forms.ToolStripComboBox fontfamily;
         private System.Windows.Forms.ToolStripButton ColorBtn;
         private System.Windows.Forms.RichTextBox rtb1;
-        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem New;
+        private System.Windows.Forms.ToolStripMenuItem Open;
+        private System.Windows.Forms.ToolStripMenuItem Save;
+        private System.Windows.Forms.ToolStripMenuItem Exit;
+        private System.Windows.Forms.ToolStripButton Backgroundbtn;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }
 
