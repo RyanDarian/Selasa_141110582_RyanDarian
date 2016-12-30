@@ -1,0 +1,9 @@
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\bin\Debug\Latihan_DA.exe.config
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\obj\Debug\Latihan_DA.csprojResolveAssemblyReference.cache
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\obj\Debug\Latihan_DA.Properties.Resources.resources
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\obj\Debug\Latihan_DA.csproj.GenerateResource.Cache
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\bin\Debug\Latihan_DA.exe
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\bin\Debug\Latihan_DA.pdb
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\obj\Debug\Latihan_DA.Form1.resources
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\obj\Debug\Latihan_DA.exe
+C:\Users\Se LuN\Documents\Sehong\Framework Lanjutan\Selasa_141110582_RyanDarian\Selasa_141110582_RyanDarian\Latihan_DA\obj\Debug\Latihan_DA.pdb
